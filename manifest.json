@@ -10,7 +10,7 @@
 	"theme_color": "#ffffff",
 		"icons": [
 		{
-			"src": "app_images/app_images/windows11/SmallTile.scale-100.png",
+			"src": "app_images/windows11/SmallTile.scale-100.png",
 			"sizes": "71x71"
 		},
 		{
