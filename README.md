@@ -21,12 +21,14 @@
 ### Swiper CDN
 Swiper.JS를 사용하기 위해선 CDN이 필요합니다. CDN의 주소는 아래와 같습니다. <br />
 
+#### HTML
 ``` HTML
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 ```
 
 ### 코드 설명
+#### HTML
 ``` HTML
 <div id="main_slider">
 <div class="swiper-container">
@@ -83,6 +85,7 @@ Swiper.JS를 사용하기 위해선 CDN이 필요합니다. CDN의 주소는 아
 ```
 Swiper.JS를 사용하기 위해서 정해진 규격에 맞는 HTML 구조로 작성해줍니다. <br />
 Navigation과 Pagination 기능 구현을 위해서 각각 .swiper-button-next, .swiper-button-prev, .swiper-pagination도 작성해줍니다.
+#### CSS
 ``` CSS
 #main_slider .swiper-container {
 	position: relative;
@@ -172,6 +175,7 @@ Navigation과 Pagination의 위치를 위해 position: relative;를 설정해주
 }
 ```
 위와 같이 작성하여, Swiper의 슬라이드와 Navigation 버튼, Pagination 버튼 디자인을 잡아줍니다.
+#### JavaScript
 ``` JavaScript
 const mainSwiper=new Swiper("#main_slider .swiper-container", {
 	navigation: {
@@ -193,6 +197,7 @@ mainSwiper의 속성값을 선언해줍니다.
 <div align="center"><img src="https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_map.gif?raw=true"></div>
 
 ### 코드 설명
+#### JavaScript
 ``` JavaScript
 let map;
 ```
@@ -265,7 +270,8 @@ Service Worker는 백그라운드에서 실행되는 Javascript입니다. 오프
 2. pwabuilder-sw.js 파일을 수정해서 offline.html을 연결합니다.
    ```const offlineFallbackPage="offline.html";```
 3. 오프라인일 경우 연결된 offline.html을 생성합니다.
-   ```
+   #### HTML
+   ``` HTML
    <!DOCTYPE html>
    <html lang="ko">
    <head>
@@ -278,7 +284,8 @@ Service Worker는 백그라운드에서 실행되는 Javascript입니다. 오프
    </body>
    </html>
    ```
-4. pwabuilder-sw.js 파일을 추가하기 위해 index.html를 수정합니다.
+5. pwabuilder-sw.js 파일을 추가하기 위해 index.html를 수정합니다.
+   #### HTML
    ```
    <script type="module">
    if("serviceWorker" in navigator){
