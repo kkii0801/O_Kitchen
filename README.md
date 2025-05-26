@@ -16,7 +16,7 @@
 ## 메인 상품 페이지 Swiper 구축하기
 
 ### 동작 예시
-<center>![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_mainslider.gif?raw=true)</center>
+<center> ![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_mainslider.gif?raw=true) </center>
 
 ### 코드 설명
 ``` HTML
@@ -33,7 +33,7 @@
 ## Google Maps API 적용하기
 
 ### 동작 예시
-<center>![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_map.gif?raw=true)</center>
+<center> ![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_map.gif?raw=true) </center>
 
 ### 코드 설명
 ``` JavaScript
@@ -136,4 +136,4 @@ Service Worker는 백그라운드에서 실행되는 Javascript입니다. 오프
    </script>
    ```
 위 과정을 정상적으로 진행하고, 사이트 접속시 정상적으로 빌드 됐다면 아래와 같이 작동하는 것을 볼 수 있습니다.
-<center>![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/OKitchen_PWA.PNG?raw=true)</center>
+<center> ![images](https://github.com/kkii0801/Readme_files/blob/main/images_2/OKitchen_PWA.PNG?raw=true) </center>
