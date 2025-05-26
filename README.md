@@ -18,16 +18,173 @@
 ### 동작 예시
 <div align="center"><img src="https://github.com/kkii0801/Readme_files/blob/main/images_2/Okitchen_mainslider.gif?raw=true"></div>
 
+### Swiper CDN
+Swiper.JS를 사용하기 위해선 CDN이 필요합니다. CDN의 주소는 아래와 같습니다. <br />
+
+``` HTML
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+```
+
 ### 코드 설명
 ``` HTML
-
+<div id="main_slider">
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="title">
+				<span class="tag">#계란요리 #카레</span>
+				<span class="tag">#맥주안주 #브런치 #치즈듬뿍</span>
+				<strong>요리의 업그레이드<br>셰프의 팁</strong>
+				<span class="tip">오뚜기 간편식이 요리가되는 팁!</span>
+			</div>
+			<img src="images/main1.png" alt="main1">
+		</div>
+		<div class="swiper-slide">
+			<div class="title">
+				<span class="tag">#한식 #집밥 #비빔장</span>
+				<span class="tag">#만능소스 #소불고기양념</span>
+				<strong>온 가족과 함께<br>오늘은 오뚜기집밥</strong>
+				<span class="tip">오뚜기 간편식이 요리가되는 팁!</span>
+			</div>
+			<img src="images/main2.png" alt="main2">
+		</div>
+		<div class="swiper-slide">
+			<div class="title">
+				<span class="tag">#XO만두 #굴림만두</span>
+				<span class="tag">#캠핑 #라망치즈 #셰프의팁</span>
+				<strong>#인기레시피<br>캠핑 요리</strong>
+				<span class="tip">오뚜기 간편식이 요리가되는 팁!</span>
+			</div>
+			<img src="images/main3.png" alt="main3">
+		</div>
+		<div class="swiper-slide">
+			<div class="title">
+				<span class="tag">#김치 #장국</span>
+				<span class="tag">#국수맛집 #분식집 #포장마차</span>
+				<strong>#신규레시피<br>가볍게 소울 푸드</strong>
+				<span class="tip">오뚜기 간편식이 요리가되는 팁!</span>
+			</div>
+			<img src="images/main4.png" alt="main4">
+		</div>
+		<div class="swiper-slide">
+			<div class="title">
+				<span class="tag">#치즈듬뿍 #샐러드 #브런치</span>
+				<strong>샐러드 토핑<br>오뚜기 스트링치즈!</strong>
+				<span class="tip">오뚜기 간편식이 요리가되는 팁!</span>
+			</div>
+			<img src="images/main5.png" alt="main5">
+		</div>
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+	<div class="swiper-pagination"></div>
+</div>
 ```
-
+Swiper.JS를 사용하기 위해서 정해진 규격에 맞는 HTML 구조로 작성해줍니다. <br />
+Navigation과 Pagination 기능 구현을 위해서 각각 .swiper-button-next, .swiper-button-prev, .swiper-pagination도 작성해줍니다.
+``` CSS
+#main_slider .swiper-container {
+	position: relative;
+	height: 84vh;
+	overflow: hidden;
+}
+```
+Navigation과 Pagination의 위치를 위해 position: relative;를 설정해주고, <br />
+올바른 swiper 규격을 위해 overflow: hidden;도 설정해줍니다.
+``` CSS
+#main_slider .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#main_slider .swiper-slide .title {
+	position: absolute;
+	left: 0;
+	bottom: 10vh;
+	padding: 0 25px;
+	/* width: 100%; */
+	/* box-sizing: border-box; */
+}
+#main_slider .swiper-slide .title span.tag {
+	display: block;
+	margin-top: 5px;
+	padding-left: 5px;
+	width: 14em;
+	font-size: 0.813em;
+	background-color: #fff;
+}
+#main_slider .swiper-slide .title strong {
+	display: block;
+	margin-top: 10px;
+	font-size: 2.125em;
+	font-weight: 300;
+	letter-spacing: -0.1em;
+	color: #fff;
+}
+#main_slider .swiper-slide .title span.tip {
+	display: block;
+	margin-top: 10px;
+	font-size: 0.813em;
+	color: #fff;
+}
+#main_slider .swiper-button-prev,
+#main_slider .swiper-button-next {
+	left: auto;
+	right: auto;
+	top: auto;
+	bottom: 20px;
+	z-index: 100;
+	width: 20px;
+	height: 20px;
+}
+#main_slider .swiper-button-prev {
+	right: 90px;
+}
+#main_slider .swiper-button-prev::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/ico_arrow.png) no-repeat 0 -15px;
+	background-size: 100px auto;
+}
+#main_slider .swiper-button-next {
+	right: 20px;
+}
+#main_slider .swiper-button-next::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url(../images/ico_arrow.png) no-repeat -20px -15px;
+	background-size: 100px auto;
+}
+#main_slider .swiper-pagination-fraction {
+	bottom: 16px;
+	padding-right: 49px;
+	text-align: right;
+	font-size: 0.875em;
+	color: #fff;
+	box-sizing: border-box;
+	text-shadow: 2px 2px 0 rgba(0,0,0,.2);
+}
+```
+위와 같이 작성하여, Swiper의 슬라이드와 Navigation 버튼, Pagination 버튼 디자인을 잡아줍니다.
 ``` JavaScript
-
+const mainSwiper=new Swiper("#main_slider .swiper-container", {
+	navigation: {
+		prevEl: "#main_slider .swiper-button-prev",
+		nextEl: "#main_slider .swiper-button-next"
+	},
+	pagination: {
+		el: "#main_slider .swiper-pagination",
+		type: "fraction"
+	}
+});
 ```
-
-
+mainSwiper의 속성값을 선언해줍니다.
 ***
 
 ## Google Maps API 적용하기
