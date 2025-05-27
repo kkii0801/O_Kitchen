@@ -259,7 +259,7 @@ HTML, CSS, JavaScript와 같은 웹 기술로 만드는 앱입니다. <br />
     Orientation : Portrait <br />
     Display : standalone, 보여주고 싶은 브라우저 UI의 타입을 설정할 수 있습니다. 설정할 수 있는 옵션으로는 fullscreen(전체 화면), <br />
     standalone(네트워크에 연결되지 않은 상태에서도 스스로 동작할 수 있는 것), minimal-ui(최소화된 UI), browser(브라우저 표준 인터페이스)가 있습니다.
-3. Manifest.json와 image source 파일의 icon.json 내부의 이미지 경로를 현 폴더 상황에 맞게 수정, index.html에도 Manifest.json 경로를 설정해줍니다. (<link rel="manifest" href="manifest.json">) <br />
+3. Manifest.json와 image source 파일의 icon.json 내부의 이미지 경로를 현 폴더 상황에 맞게 수정, index.html에도 Manifest.json 경로를 설정해줍니다. (link rel="manifest" href="manifest.json") <br />
 4. 올바르게 수정했으면 커밋 후 사이트가 정상 구동하는지 확인해줍니다.
 
 ### Service Worker란? 
@@ -267,7 +267,7 @@ Service Worker는 백그라운드에서 실행되는 Javascript입니다. 오프
 
 ### Service Worker 작성 방법
 1. Generate Service Worker 버튼을 클릭하여, js 파일을 다운로드 받습니다.
-2. pwabuilder-sw.js 파일을 수정해서 offline.html을 연결합니다.
+2. pwabuilder-sw.js 파일을 수정해서 offline.html을 연결합니다. <br />
    ```const offlineFallbackPage="offline.html";```
 3. 오프라인일 경우 연결된 offline.html을 생성합니다.
    #### HTML
