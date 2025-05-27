@@ -244,8 +244,8 @@ HTML, CSS, JavaScript와 같은 웹 기술로 만드는 앱입니다. <br />
 또한, 푸시 알림이나 오프라인 지원과 같은 네이티브 앱의 특징들도 전부 제공할 수 있습니다.
 
 ### PWA 제작 방법
-1. 기존 html source(favicon.icon 필요)를 git에 커밋을 해준 다음에, PWA를 지원해주는 사이트([PWABuilder](https://www.pwabuilder.com/))에 접속해줍니다.
-2. repository 링크를 입력하고, Manifest 설정을 작성해주고 다운로드 해줍니다. (이미지 파일 변환 必)
+1. 기존 html source(favicon.icon 필요)를 git에 커밋을 해준 다음에, PWA를 지원해주는 사이트([PWABuilder](https://www.pwabuilder.com/))에 접속해줍니다. <br />
+2. repository 링크를 입력하고, Manifest 설정을 작성해주고 다운로드 해줍니다. (이미지 파일 변환 必) <br />
     Name : O'Kicten <br />
     Short Name : 오‘키친 <br />
     Id : kkii0801 <br />
